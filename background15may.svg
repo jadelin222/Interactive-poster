@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="9in"
+   height="12in"
+   viewBox="0 0 864 1152"
+   version="1.1"
+   id="svg5"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2" />
+  <g
+     id="layer1">
+    <image
+       width="864"
+       height="1152"
+       preserveAspectRatio="none"
+       xlink:href="DAC%20project%20(code)/projectProposal_yiyingLin2022%20copy/img/bg.png"
+       id="image920"
+       x="0"
+       y="0" />
+    <g
+       id="emptyxi">
+      <path
+         style="fill:#1d1d1d;fill-opacity:1;stroke:#191919;stroke-width:1.00157;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:12.0189, 1.00157;stroke-dashoffset:0;stroke-opacity:1"
+         d="m 107.48655,712.46155 26.14538,-1.08939 1.08939,40.30746 -28.32416,1.08939 z"
+         id="path957" />
+    </g>
+  </g>
+  <path
+     style="fill:#000000;stroke:#000000;stroke-width:0.96;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0;fill-opacity:0;opacity:0;stroke-miterlimit:4;stroke-dasharray:none"
+     d="m 611.17597,221.39538 -1.55912,-68.60139 -42.0963,-42.0963 -74.83788,-14.032103 -23.38683,53.010163 21.82771,81.07436 z"
+     id="xipoint" />
+</svg>

@@ -1,0 +1,341 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* style.css */
+
+html, body {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+
+  display: flex;
+
+  /* This centers our sketch horizontally. */
+  justify-content: center;
+
+}
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+figure {
+  max-width: 860px;
+  margin: 0 0 20px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*position eachimag element onto screen for layering effects*/
+/*for the buns, hover to see*/
+.xibao{
+    position: absolute;
+    top: 290px; 
+    left: calc(50% - 539px);
+    width: 290px;   
+}
+.bun1{
+    position: absolute;
+    top: 400px; 
+    left: calc(50% - 509px);
+    width: 80px;
+    opacity:0;
+}
+.bun2{
+    position: absolute;
+    top: 360px; 
+    left: calc(50% - 519px);
+    width: 80px;
+    opacity:0;
+}
+.bun3{
+    position: absolute;
+    top: 310px; 
+    left: calc(50% - 525px);
+    width: 80px;
+    opacity:0;
+}
+.bun4{
+    position: absolute;
+    top: 260px; 
+    left: calc(50% - 505px);
+    width: 80px;
+    opacity:0;
+}
+
+.bun1:hover {
+    opacity:1;
+}
+.bun2:hover {
+    opacity:1;
+}
+.bun3:hover {
+    opacity:1;
+}
+.bun4:hover {
+    opacity:1;
+}
+/*rotating text*/
+.text{
+    position: absolute;
+    top:120px;
+    left: calc(50% - 520px);
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    display: flex;
+
+    justify-content: center;
+    align-content: center;
+    animation: rotateText 10s linear infinite;
+
+}
+@keyframes rotateText{
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.text span{
+    position: absolute;
+    color: rgba(255,0,0,1);
+    left: 50%;
+    top:6%;
+    font-size: 40px;
+    font-weight: 800;
+    transform-origin: 0 300px;
+}
+
+/*for the text when you click gesture1 (the xi image on top) */
+#text_box_id{
+    position: absolute;
+    top: 40px;
+    left: calc(50% + 80px);
+    font-size: 20px;
+    color: rgba(255,0,0,1);
+    border: none;
+    background: transparent;
+    
+}
+.bird{
+    position: absolute;
+    top: 20px;
+    left: calc(50% - 580px);
+    width: 550px;
+    
+}
+.anni{
+    position: absolute;
+    top: 820px;
+    left: calc(50% - 580px);
+    width: 400px;
+    //height:400px
+    
+}
+
+.doorL{
+   position: absolute;
+    top: 480px; 
+/*    left: 1063px;*/
+   left: calc(50% - 345px);
+}
+.doorR{
+   position: absolute;
+    top: 472px; 
+/*    left: 1428px;*/
+    left: calc(50% + 13px);
+    height: 250px;
+    width: 94px;
+}
+.door{
+    position: absolute;
+    transform: rotate(-65deg);
+    top: 370px;
+/*    left: 1066px;*/
+    left: calc(50% - 353px);
+    width:155px;
+}
+.door2{
+    position: absolute;
+    transform: rotate(65deg);
+    top: 370px;
+/*    left: 1370px;*/
+    left: calc(50% - 40px);
+    width:155px;
+}
+.doortop{
+    position: absolute;
+    top: 300px;
+/*    left:1155px;*/
+    left: calc(50% - 253px);
+    width:280px;
+    height:72px;
+}
+.flag{
+    position:absolute; 
+    transform: rotate(-33deg);
+    top:111px; 
+/*    left:39.5%; */
+    left: calc(50% - 413px);
+    //border:1px black solid; 
+    width:750px;
+}
+.partyicon{
+    position:absolute; 
+    top: 50px;
+/*    left:880px;*/
+    left: calc(50% - 553px);
+    width:300px;
+}
+.xikiss{
+    position:absolute; 
+    top: 468px;
+/*    left: 1143px;*/
+    left: calc(50% - 265px);
+    width:283px;
+}
+.army{
+    position: absolute; 
+    top: 900px;
+    left: calc(50% + 8px);;
+    width:280px;
+}
+
+.gesture{
+    position: absolute; 
+    top:112px;
+/*    left:1200px;*/
+    left: calc(50% - 220px);
+    width:250px;
+    
+}
+
+#dream{
+    position: absolute; 
+    top:512px;
+    left: calc(50% + 10px);
+    width: 230px;
+    -webkit-animation: linear infinite;
+    -webkit-animation-name: run;
+    -webkit-animation-duration: 5s;
+    
+}
+
+@-webkit-keyframes run {
+  0% {
+      top: calc(60% - 120px);
+  }
+  50% { 
+    top: calc(60% - 290px); 
+   }
+  100% {
+      top: calc(60% - 120px);
+  }
+}
+
+/*for the floating texts on screen*/
+#wrapper{
+    position: absolute; 
+    top:742px;
+    width:80px;
+    font-size: 20px;
+    color: rgba(255,0,0,1);
+    -webkit-animation: linear infinite;
+    -webkit-animation-name: find;
+    -webkit-animation-duration: 5s;
+    
+}
+@-webkit-keyframes find {
+  0% {
+    left: calc(50% - 540px);
+  }
+  50% {  
+    left: calc(50% - 585px); 
+   }
+  100% {
+    left: calc(50% - 540px);     
+  }
+}
+#wrapper2{
+    position: absolute; 
+    top:742px;
+    left: calc(50% - 600px);
+    width:130px;
+    font-size: 20px;
+    color: rgba(255,0,0,1);
+    transform: rotate(-90deg);
+    -webkit-animation: linear infinite;
+    -webkit-animation-name: feed;
+    -webkit-animation-duration: 5s;
+    
+}
+@-webkit-keyframes feed {
+  0% {
+    top: calc(50% - 240px);
+  }
+  50% { 
+    
+    top: calc(50% - 280px); 
+   }
+  100% {
+    top: calc(50% - 240px);     
+  }
+}
+#wrapper3{
+    position: absolute; 
+    top: 142px;
+    width:250px;
+    font-size: 20px;
+    color: rgba(255,0,0,1);
+    -webkit-animation: linear infinite;
+    -webkit-animation-name: way;
+    -webkit-animation-duration: 5s;
+    
+}
+@-webkit-keyframes way {
+  0% {
+    top: calc(50% - 530px);
+  }
+  50% {   
+    top: calc(50% - 560px); 
+   }
+  100% {
+    top: calc(50% - 530px);     
+  }
+}
+
+#mask{
+    position: relative;
+    top: 0;
+    left: calc(50%+432px);
+    width: 300px;
+    height: 1200px;
+    background-color: white;
+        
+}
+
+/* will hold our sketch */
+#content {
+  position: absolute;
+  background-color: #2E2;
+  padding: 0.825em;
+  border-radius: 3%;
+}
+
+canvas {
+  display: block;
+}
+
+svg {
+    position: relative;
+    top:20px;
+}

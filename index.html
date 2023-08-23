@@ -1,0 +1,169 @@
+<!DOCTYPE html><html lang="en"><head>
+    <script src="p5.js"></script>
+    <script src="p5.sound.min.js"></script>
+    <script src="freezeframe.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">   
+  </head>
+    
+  <body>
+    <script src="sketch.js"></script>   
+    <div class="wrap"></div>
+ 
+<!-- svg img gets attached below -->
+
+      <svg
+   width="9in"
+   height="12in"
+   viewBox="0 0 864 1152"
+   version="1.1"
+   id="svg5"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2" />
+  <g
+     id="layer1">
+    <image
+       width="864"
+       height="1152"
+       preserveAspectRatio="none"
+       xlink:href="img/bg.png"
+       id="image920"
+       x="0"
+       y="0" />
+    <g
+       id="emptyxi">
+      <path
+         style="fill:#1d1d1d;fill-opacity:1;stroke:#191919;stroke-width:1.00157;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:12.0189, 1.00157;stroke-dashoffset:0;stroke-opacity:1"
+         d="m 107.48655,712.46155 26.14538,-1.08939 1.08939,40.30746 -28.32416,1.08939 z"
+         id="path957" />
+    </g>
+  </g>
+</svg>    
+      <!-- svg img gets attached above -->
+      
+      <img class = "bird" src = "img/bird.gif" />
+        <div class="text">
+          <p>
+              富强、民主、文明、和谐，自由、平等、公正、法治，爱国、敬业、诚信、友善，
+          </p>  
+        </div>
+      <script>
+      const text = document.querySelector('.text p');
+      text.innerHTML = text.innerText.split("").map
+      (
+        (char, i) =>
+        `<span style="transform:rotate(${i*10}deg)">${char}</span>`
+       ).join("")
+      </script>
+     
+      <figure class = "partyicon"> 
+        <img class = "freezeframe2"
+           src = "img/icon.gif" />
+      </figure>
+      
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+    
+    $(document).ready(function() {
+          $('#gesture1').on({
+              'click': function() {
+                let src = ($(this).attr('src') === 'img/xipoint1.png') ?
+                  'img/xipoint2.png' :
+                  'img/xipoint1.png';
+                $(this).attr('src', src);
+              }
+            });
+        }); 
+    
+</script>
+      <img class = "door" src = "img/1.JPG" />
+      <img class = "xibao" src = "img/xibao.png" id = "xibao"/>
+      <img class = "doorL" src = "img/p.jpg" />
+   <div id="buns">   
+      <img class = "bun1" src = "img/taxbun.png" id = "bun1"/>
+      <img class = "bun2" src = "img/attentionbun.png" id = "bun2"/>
+      <img class = "bun3" src = "img/glorybun.png" id = "bun3"/>
+      <img class = "bun4" src = "img/powerbun.png" id = "bun4"/>
+   </div>  
+      <figure class = "flag"> 
+      <img
+     class = "freezeframe1"
+           src = "img/silk.gif" />
+
+      </figure>
+
+    <div class="gesture">
+        <div class="gesture1"><img src="img/xipoint1.png" alt="xipoint1" id="gesture1" class="has-message" data-msg="I am ALWAYS right!">
+        <form>
+        <input type="text" id="text_box_id" name="Example"/>
+    </form>
+        </div>
+    </div>
+    <script type="text/javascript">
+    $(function(){
+        //You need to bind click events to your images and probably
+        $("img.has-message").click(function(){
+            var msg = $(this).attr("data-msg");
+            //get the message from that particular image
+            $("#text_box_id").attr("value",msg);
+            //changes the value of the text box to display the message
+            return false;
+        });
+    });
+</script>
+      
+<!--
+      <a href="javascript: changeText(1);">
+   <img src="img/xipoint1.png" alt="abc" />
+</a>
+<a href="javascript: changeText(2);">
+   <img src="img/xipoint2.png" alt="abc" />
+</a>
+-->
+      
+      
+      <img class = "xikiss" src = "img/kiss.png" />
+      <img class = "doorR" src = "img/p.jpg" />
+       
+      <img class = "door2" src = "img/1.JPG" />
+      <img class = "doortop" src = "img/1.1.JPG" />
+
+       <img class = "anni" src = "img/100g.gif" />
+      
+      <div id="dream">
+        <img class = "cndream" src = "img/dream.png" />
+      </div>
+      
+      <img class = "army" src = "img/army.gif" />
+      
+      <div id="wrapper">
+        <marquee class = "findme" behavior="alternate">find me!</marquee>
+      </div>
+      <div id="wrapper2">
+        <marquee class = "feedme" behavior="alternate">feed me!</marquee>
+      </div>
+      <div id="wrapper3">
+        <marquee class = "rightway" behavior="alternate">I'll show you the right way!</marquee>
+      </div>
+
+
+    <div id="content" style ="visibility:hidden;">
+
+      <!-- sketch canvas gets attached here -->
+      <div id="sketch-holder"></div>
+
+        <p>Short demo of integrating p5js, svg, and plain html<br />
+          to create an interactive poster. Click the outlined area<br />
+          to the left of this box to change the p5js canvas drawing.
+       </p>
+       <h2>Info: mouse screen coordinates</h2>
+       <p id='mouse-coords'></p>
+    </div>
+  
+<div id="mask" >
+      </div>
+
+</body></html>
